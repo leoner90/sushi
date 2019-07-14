@@ -1,0 +1,123 @@
+/*HEADER*/
+#nav-bar {
+  min-height: 1px; 
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: brankovic; 
+  z-index: 9999;
+  @media screen and (max-width: 768px) {  
+    min-height: 1px;
+  }
+}
+#nav-bar-header {
+  min-height: 130px;
+  width: 100%;
+  padding-bottom: 20px;
+  color: gray;
+  @media screen and (max-width: 768px) {  
+    padding-bottom: 0px;
+    min-height: 1px;
+    padding-bottom: 0px;
+  }
+}
+#nav-bar-menu {
+  min-height: 1px;
+}
+#logo {
+  float: left; 
+  padding: 15px;
+  transition: all 3s linear;
+  -webkit-animation: rotlogo 10s linear infinite;
+  @media screen and (max-width: 768px) { 
+    padding: 5px; 
+    height: 20px;
+  }
+}
+#headTittle {
+  color: #eee;
+  font-weight: bold;
+  font-size: 30px;
+  padding-left: 10%;
+  padding-top: 30px;
+  text-shadow: 2.4px 2.4px #f43;
+  @media screen and (max-width: 768px) {  
+    font-size: 1.5vw;
+    padding-top: 15px;
+    text-shadow: none;
+  }
+}
+#tagline {
+  color: #eee;;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 15%;
+  padding-left: 10%;
+  border-bottom: 1px solid #fff;
+  text-shadow: 2.4px 2.4px #f43;
+  @media screen and (max-width: 768px) {  
+    font-size: 1.5vw;
+    text-shadow: none;
+  }
+}
+#menu-list {
+  margin: 0;
+}
+#menu-list>li {
+  display: inline-block;
+  padding:  15px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  @media screen and (max-width: 768px) {  
+    line-height: normal;
+    padding: 5px;
+    font-size: 1.5vw;
+  }
+}
+#menu-list>li>a {
+  color: inherit;
+}
+#menu-list a:focus, 
+#menu-list a:hover, 
+#menu-list a:active,
+#menu-list a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+#nav-bar-phone{
+  position: absolute;
+  right: 0;
+  font-weight: normal;
+  font-family: brankovic;
+  color: #ff0000 !important;
+  font-size: 20px;
+  @media screen and (max-width: 768px) {  
+    display: none !important;
+  }
+}
+.active {
+  color: #fff !important;
+  text-shadow: 2px 2px #f43;
+  @media screen and (max-width: 768px) {  
+    text-shadow: 0.75px 0.75px #f43;;
+  }
+}
+#order-basket-img {
+  width: 40px;
+  height: 30px;
+  @media screen and (max-width: 768px) {  
+    width: 15px;
+    height: 9px;
+  }
+}
+@-webkit-keyframes rotlogo {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}

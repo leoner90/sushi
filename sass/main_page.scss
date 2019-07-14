@@ -1,0 +1,77 @@
+#main-page-link {
+  color:#fff;
+}
+#main-page-how-to-order-info{
+  margin-top: 15px;
+  padding:3px;
+  @media screen and (max-width: 768px) {  
+	  margin-top: 0px;
+	}
+}
+#main-page-img{
+  margin: 0 auto;
+  width: 60%;
+  transition: all 2s linear;
+  -webkit-animation: rotimg 7s linear infinite;
+  @media screen and (max-width: 768px) {  
+    width: 100%;
+    padding-top: 0;
+    padding-left: 15px;
+    min-height: 65px;
+    display: inline-block;
+	}
+}
+.restaurant-info{
+  padding-left: 25px;
+  margin: 20px 0;
+  font-family: 'Acme', sans-serif;
+}
+.opening-times, 
+.address {
+  border-right: 1px #ccc dotted;
+}
+
+.main-page-headers {
+  background-color: rgba(0,0,0,0.6);
+  border-radius:99px 99px 0 0 ;
+  border-top: 3px solid #ccc; 
+  padding: 5px;
+  min-height: 30px;
+  font-size: 14px;
+  font-family: 'Acme', sans-serif;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+#main-page-phone {
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.main-page-wraper{
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 30px 30px 20px 20px;
+  border-bottom: 6px solid #ccc; 
+}
+.carousel-inner , 
+.carousel-control {
+  border-radius: 0 0 40px 40px;
+}
+#myCarousel{
+  padding: 10px;
+}
+@-webkit-keyframes rotimg {
+  0% {
+    -webkit-transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(40deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+  }
+}
+@media screen and (max-width: 768px) { 
+  .main-page-row{
+  	margin: 0 !important;
+  }
+}

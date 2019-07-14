@@ -1,0 +1,91 @@
+/*RIGHT SIDEBAR*/
+#right-sidebar{
+  min-height: 100vh;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.7);
+  @media screen and (max-width: 768px) {  
+    padding: 0px;
+    padding-left: 5px;
+  }
+}
+#authorization_form {
+  background-color: rgba(0,0,0,0.4);
+  padding:30px 10px 30px 10px;
+  border-radius: 7px;
+  @media screen and (max-width: 768px) {  
+    padding: 10px;
+  }
+}
+#reg-btn , 
+#login-btn {
+  margin-top: 5px;
+  font-weight: bold;
+  min-width: 100%;
+  @media screen and (max-width: 768px) {  
+    margin: 0;
+    padding: 1px !important;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+#login {
+  margin-bottom: 5px;
+}
+#login , 
+#pwd {
+  @media screen and (max-width: 768px) {  
+    height:  18px;
+  }
+}
+#login-err {
+  letter-spacing: 1px;
+  background-color: rgba(255 ,0 ,0 ,0.2);
+  @include border-radius(20px 20px 0 0);
+  font-size: 12px;
+  font-weight: bold;
+  color:#ccc; 
+  text-align: center;
+  padding: 3px;
+  display: none;
+}
+.avatar-img{
+  border: 2px solid #000;
+  border-radius: 10px 10px 0 0;
+}
+.my-Acc-btn {
+  color:#fff;
+  cursor: pointer;
+  width: 100%; 
+  margin-top: 5px;
+  @media screen and (max-width: 768px) { 
+    padding: 1px !important;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+.log-out-btn {
+  color:#fff;
+  cursor: pointer;
+  width: 100%; 
+  margin-top: 5px;
+  @media screen and (max-width: 768px) { 
+    padding: 1px !important;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+.right-bar-ad {
+  margin: 5px auto; 
+  padding: 5px; 
+  background-color: rgba(0,0,0,0.4);
+  padding:30px 10px 30px 10px;
+  border-radius: 7px;
+  min-width: 100%;
+}
+.user-name{
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 0 0 10px 10px;
+  color: #ccc;
+}

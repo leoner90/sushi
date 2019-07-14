@@ -1,0 +1,191 @@
+.payment-err{
+  letter-spacing: 1px;
+  background-color: rgba(255 ,0 ,0 ,0.2);
+  @include border-radius(8px 8px 0 0);
+  font-size: 12px;
+  font-weight: bold;
+  color:#ccc; 
+  padding: 5px;
+  border: 1px solid red;
+}
+#payment-in-process{
+  z-index: 999999 !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left:0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+}
+#spiner-for-payment {
+  z-index: 9999999 !important;
+  position: absolute;
+  margin: 0  auto;
+  width: 10%;
+  height: 15vh;
+  background: url("../img/menuAndOrderBascetSpinner.gif")  0 /100% 100% no-repeat;
+  top:25%; 
+  transform: translateY(-25%);
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+.container-for-g-recaptcha {
+  max-width: 300px;  
+  padding-bottom: 10px;    
+ 
+}
+.order-basket-row ,
+.order-basket-header,
+.order-total-summ-row,
+.order-basket-row > div , 
+.order-basket-header > div , 
+.order-total-summ-row > div {
+  margin: 0 ;
+  padding: 3px ;
+  font-size: 1vw;
+  @media screen and (max-width: 768px) { 
+     font-size: 1.5vw;
+  }
+}
+.sushi-name{
+  font-family: 'mali'; 
+}
+.order-basket-header{
+  border: 1px solid #fff; 
+  margin-top: 10px;
+  font-family: 'Acme', sans-serif;
+  padding: 1px 3px;
+  font-weight: bold;
+  background-color: rgba(60,60,60,0.65);
+  color: #ccc;
+  letter-spacing: 0.5px;
+  border-radius: 1px;
+}
+.order-basket-row {
+  margin-top: 5px !important;
+  border: 1px solid #fff;
+  padding: 1px 3px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  border-radius: 1px;
+  background-color: rgba(0,0,0,0.15);
+}
+.order-basket-row:hover {
+  background-color: rgba(0,0,0,0.95);
+}
+.order-total-summ-row{
+  font-family: 'Acme', sans-serif;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  background-color: rgba(60,60,60,0.65);
+  margin-top: 10px !important;
+  padding: 1px 3px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  border-top: 1px solid #fff; 
+  margin-top: 10px;
+}
+.totalSumm {
+  font-weight:bold; 
+  color: red;
+}
+.log-in-to-procced-text{
+  font-family: 'Acme', sans-serif;
+  width: 65%;
+  margin:0 auto;
+  font-size: 1vw;
+  color: #ccc;
+  background-color: rgba(200,0,0,0.3);
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid rgba(200,0,0,0.45);
+  border-radius: 0 0 20px 20px;
+  @media screen and (max-width: 768px) { 
+    font-size: 1.5vw;
+  }
+}
+.delete-order-btn{
+  font-size: 1vw;
+  padding: 3px 12px !important;
+  @media screen and (max-width: 768px) { 
+    padding: 1px !important;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+.errorbg{
+  background-color: rgba(255 ,0 ,0 ,0.1);
+  border: 1px solid #900b0b;
+}
+#payment-errors {
+  margin-top: 10px;
+}
+#information-for-delivery{
+  font-family: 'Acme', sans-serif;
+  border: 1px solid #ccc;
+  font-size: 1vw;
+  color: #ccc;
+  margin: 10px  0;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 10px;
+  background-color: rgba(60,60,60,0.8);
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+}
+#information-for-delivery-header{
+  text-align: center;
+}
+.payment-btn{
+  width: 90%;
+  letter-spacing: 1px;
+  background-color: rgba(20,17,216,0.37);
+  border: 2px solid #000;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #ccc;
+  &:hover{
+    background-color:rgba(20,17,216,0.5);
+    color: #ccc;
+  }
+  &:focus{
+    color: #ccc;
+  }
+}
+#cash-payment-btn{
+  background-color:rgba(228,41,35,0.37);
+  &:hover{
+    background-color:rgba(228,41,35,0.5);
+  }
+}
+.sushiName{
+  font-family: 'mali', cursive ;
+}
+#address{
+  height: 30px;
+  width: 65%;
+}
+#post-code{
+  height: 30px;
+  width: 35%;
+}
+#phone{
+  height: 30px;
+  width: 35%;
+}
+#payment-container{
+  text-align: center;
+}
+.totalSumm{
+  font-weight:bold;
+  color: red;
+}
+
+#information-for-delivery > .row {
+  margin-top: 10px;
+}
