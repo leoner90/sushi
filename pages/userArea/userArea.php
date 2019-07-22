@@ -41,7 +41,7 @@ if (isset($_SESSION['id']) and isset($_SESSION['hash'])){
 		<p id="login-err"></p>
 		<input id="login" type="text" class="form-control" placeholder="Login" onfocus="$(this).removeClass('errorbg')">
 		<input id="pwd" type="password" class="form-control" placeholder="Password" onfocus="$(this).removeClass('errorbg')"> 
-		<button id="login-btn" type="submit" class="btn  btn-success btn-sm" onclick="log_in()">LOGIN</button>
+		<button id="login-btn" type="submit" class="btn  btn-success btn-sm" onclick="log_in(event)">LOGIN</button>
 	</form>
 	<a href="#/authorization/registration">
 	  <button id="reg-btn" class="btn btn-primary btn-sm">REGISTRATION</button>
