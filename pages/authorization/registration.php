@@ -15,7 +15,7 @@ if (isset($_SESSION['hash'] )) {
     <input type="password" class="form-control" id="password" onfocus="$(this).removeClass('errorbg')">
     <label for="r-pwd">Repeat Password:</label>
     <input type="password" class="form-control" id="Rpassword" onfocus="$(this).removeClass('errorbg')">
-    <button id="reg-page-btn" onclick="reg()" type="submit" class="btn btn-success">Registration</button>
+    <button id="reg-page-btn" onclick="reg(event)" type="submit" class="btn btn-success">Registration</button>
   </form>
 <?php
 }
