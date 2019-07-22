@@ -33,7 +33,7 @@ $(window).scroll(function() {
 function page_reload(){
   changePage(); // reload content
 }
-function log_in() {   
+function log_in(event) {   
   event.preventDefault();
   var login = $('#login').val(); 
   var password = $('#pwd').val();
@@ -66,7 +66,8 @@ function deleteOrder(id , quantity,index) {
     changePage(); // reload content
   })
 }
-function buy(id, index) {
+function buy(event,id, index) {
+  event.preventDefault();
   $('.add-to-basket-preloader').eq(index).fadeIn(0);
   var quantity = $('.quantity')[index].value; // get input value (quantity)
   $.post("pages/orders/orderphp.php",{id: id , quantity:quantity },function(data){  
@@ -112,7 +113,6 @@ function PayByCash() {
   }
 }
 function changePsw() {
-  event.preventDefault();
   var oldPassword = $("#oldPassword").val();
   var newPassword = $("#newPassword").val();
   var Rnewpassword = $("#Rnewpassword").val();
@@ -129,7 +129,6 @@ function changePsw() {
 } 
 //SEND DATA TO SERVER - CHECK ERRORS AND IF NO ERRORS WRITE TO DB AND DOWNLOAD FILES
 function changeavatar() {
-  event.preventDefault();
   var form =  new FormData($('#uploadForm')[0]);
   $.ajax({
     url: "pages/userArea/changeavatar.php",
@@ -197,7 +196,9 @@ function reg() {
   var Rpassword = $('#Rpassword').val();  
   $.post("pages/authorization/regphp.php",{email: email ,login:login, password:password , Rpassword:Rpassword },function(data){
     if (data == '') {
-      page_reload(); 
+      $("#authorization_form").load( "pages/userArea/userArea.php", function() {
+        changePage(); 
+      })
     } else {
       var result = JSON.parse(data) ;
       $("#reg-err-container").hide().show().html(result); 
@@ -267,7 +268,6 @@ var handler = StripeCheckout.configure({
   }
 })
 function cardPaymant(price) {
-  event.preventDefault();
   $("#payment-errors").hide();
   $('.container-for-g-recaptcha').hide();
   var address = $('#address').val(); 
