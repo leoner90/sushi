@@ -37,7 +37,7 @@ while($row = $result->fetch_assoc()) { ?>
         <p class="menu-price"> PRICE: &#163; <?php echo $row["price"]?> </p>
           <form class="add-to-basker-form">
             <input class="quantity" type="number"   value="1" max="24" min="1"  oninput="max_quantity(<?php echo $i ?>)" /> 
-            <button class="add-to-basceket-btn btn" onclick="buy<?php echo '(\''.$row["id"].'\',\''.$i.'\')'?>" >
+            <button class="add-to-basceket-btn btn" onclick="buy<?php echo '(event ,\''.$row["id"].'\',\''.$i.'\')'?>" >
               ADD TO BASKET
             </button> 
           </form>
